@@ -27,7 +27,7 @@ export class SignupPage implements OnInit {
       [
         Validators.required,
         Validators.pattern("^[0-9]*$"),
-        Validators.minLength(10),
+        Validators.maxLength(10),
         // Validators.min(10)
       ]
     ],
@@ -48,16 +48,14 @@ export class SignupPage implements OnInit {
   get errorControl() {
     return this.ionicForm.controls;
   }
-  async signUpWithGoogle(){
-    const loading = await this.loadingController.create();
-    // await loading.present();
+  // async signUpWithGoogle(){
+  //   const loading = await this.loadingController.create();
+  //   // await loading.present();
 
-    const user = await this.authService.GoogleAuth().then((re)=>{
-      console.log(re);
-      
-      // this.router.navigate(['/home'])
-    })
-  }
+  //   const user = await this.authService.GoogleAuth();
+  //   console.log(user);
+  //   // this.router.navigate(['/home'])
+  // }
  
   async signUP(){
     const loading = await this.loadingController.create();
