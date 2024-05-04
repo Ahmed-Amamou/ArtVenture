@@ -1,13 +1,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Get strt</ion-title>
-    </ion-toolbar>
+    <!-- <ion-toolbar>
+      <ion-title size="large">Get started</ion-title>
+    </ion-toolbar> -->
   </ion-header>
-
+  
   <div class="header">
-    <ion-title class="title" size="large">Get Started</ion-title>
-    <p class="subtitle">By creating an account</p>
+    <img src="assets/Artventure_logo.png" alt="logo" class="logo" />
+    <ion-title class="title">Welcome </ion-title>
+    
+    <p class="subtitle">Create Your Account Now</p>
+    
   </div>
   <form [formGroup]="ionicForm" novalidate>
     <div class="ion-padding">
@@ -66,7 +69,7 @@
     </ion-button> -->
 
       <div class="loginLink">
-        <p class="p">Already a memember? <a [routerLink]="['/login']" style="color: #FFC33F">Log in</a></p>
+        <p class="p">Already a member? <a [routerLink]="['/login']" style="color: #000; font-weight: bold;">Log in</a></p>
       </div>
     </div>
 

@@ -6,10 +6,11 @@ ion-item {
     --background: #f1f1f1;
     border-radius: 10px;
     margin-bottom: 16px;
+    border-color: #000;
 }
 .header{
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
 
     .subtitle{
@@ -17,8 +18,11 @@ ion-item {
         font-size: 0.9rem;
     }
     .title{
-        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        font-size: medium;
     }
+    
 }
 .signupLink{
     display: flex;
